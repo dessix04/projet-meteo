@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Station Météo</title>
+    <link rel="stylesheet" href="./meteo.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./img/sun1.png" alt="un soleil qui brille" id="header">
+        <h1><span>Ma</span> <span>station</span> <span>météo</span></h1>
+    </header>
+    <section>
+        <div id="line">
+            <div id="ephemeride">
+                <h2 class="h2">Éphéméride</h2>
+                <p >Nous sommes le <span id="date"></span></p>
+                <p>Il est <!--<span id="horloge">hh:mm:ss</span> --> <span id="time"></span></p>
+                <p>Le soleil se lève à <span id="sunrise"></span></p>
+                <p>Et se couche à <span id="sunset"></span></p>
+                <p>Aujourd'hui nous fetons les <span id="saints"></span></p>
+            </div>
+            <table id="weather">
+                <tr id="day0Weather">
+                    <td class="normal"><span class="td">Mercredi</span></td>
+                    <td class="normal"><img src="./img/pluie.png" alt="le ciel est pluvieux"></td>
+                    <td><span class="td">Aujourd'hui le temps est pluvieux</span></td>
+                </tr>
+                <tr id="day1Weather">
+                    <td class="normal"><span class="td">Jeudi</span></td>
+                    <td class="normal"><img src="./img/maussade.png" alt="le temps est maussade"></td>
+                    <td><span class="td">Demain le temps sera maussade</span></td>
+                </tr>
+                <tr id="day2Weather">
+                    <td class="normal"><span class="td">Vendredi</span></td>
+                    <td class="normal"><img src="./img/sun.png" alt=""></td>
+                    <td><span class="td">Après demain le temps sera ensoleillé</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="temperature">
+            <h2 class="h3">Températures</h2>
+            <div id="fig">
+                <figure class="fig"><span id="minTemp" >12</span>
+                    <figcaption>Min</figcaption>
+                </figure>
+            
+            
+                <figure class="fig"><span id="maxTemp">25</span>
+                    <figcaption>Max</figcaption>
+                </figure>
+            
+            
+                <figure class="fig"><span  id="meanTemp">18</span>
+                    <figcaption>Moyenne</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span class="footer">Moi</span>
+        <span class="footer">ça vous plait? c'est moi qui l'a fait</span>
+        <span class="footer">Contactez<a href="./formulaire.html">moi</a></span>
+    </footer>
+
+<!--
+    <script type="text/javascript">
+ var date = new Date();
+ var heure =date.getHours();
+ var minute=date.getMinutes();
+ var seconde=date.getSeconds();
+var f = function() {
+if(seconde<59)
+seconde++;
+else
+{minute++;seconde=00;}
+if(minute>59)
+{heure++;minute=0;}
+document.getElementById("horloge").textContent=heure+":"+minute+":"+seconde;
+ setTimeout(f, 1000);
+}
+ setTimeout(f, 1000);
+</script>
+-->
+
+</body>
+
+</html>

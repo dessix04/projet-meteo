@@ -1,0 +1,145 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+}
+figcaption{
+    margin-left: 45px;
+}
+.h2{ overflow: hidden;
+    position: absolute;
+    background-color: blanchedalmond;
+    margin: 0px auto;
+    margin-left: 20px;
+    margin-top: -10px;
+    box-shadow: inset 0px 0px 12px blanchedalmond;
+    width: 10%;
+}
+.h3{overflow: hidden;
+    position: absolute;
+    background-color: blanchedalmond;
+    margin: 0px auto;
+    margin-left: 20px;
+    margin-top: -15px;
+    box-shadow: blanchedalmond inset 0px 0px 12px;
+    width: 11%;
+
+}
+body {
+    background-color: darkgreen;
+    border: darkorange 1px solid;
+}
+
+#header {
+    width: 10%;
+}
+section {
+    width: 100%;
+}
+#line{
+    width: 80%;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+p{
+    margin-left: 25px;}
+
+#temperature {
+    width: 20%;
+    margin-left: 150px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+#minTemp{
+    color: black;
+    font-size: 30px;
+    background-color: rgb(89, 89, 209);
+    border: black 1px solid;
+    width : 100px;
+    height : 100px;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#maxTemp {
+    color: black;
+    font-size: 30px;
+    background-color: rgb(224, 61, 61);
+    border: black 1px solid;
+    width : 100px;
+    height : 100px;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#meanTemp{
+    color: black;
+    font-size: 30px;
+    background-color: darkturquoise;
+    border: black 1px solid;
+    width : 100px;
+    height : 100px;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ephemeride
+{  overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+}
+table,tr,td
+{
+    border: black 1px solid;
+    border-collapse: collapse;
+    border-color: slategray;
+    width: 100%;
+}
+img:not(h1){
+    margin-left: 25px;
+}
+
+.td {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    color: white;
+}
+
+table, #ephemeride, #temp {
+    background-color: blanchedalmond;
+}
+.normal {
+    width: 20%;
+}
