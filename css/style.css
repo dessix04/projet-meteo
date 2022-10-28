@@ -2,6 +2,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    margin-top: 60px;
 }
 
 section {
@@ -11,14 +12,22 @@ section {
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 h1 {
     color: white;
-    font-size: 50px;
-    width:30%;
-    display: flex;
-    justify-content: space-around;
+    font-size: 60px;
+    width:60%;
+    padding-left: 150px;
+    /* display: flex;
+    justify-content:center; */
+}
+#header_img {
+    /* width: 20%; */
+    padding-left: 300px;
+    padding-top: 20px;
 }
 figcaption{
     margin-left: 45px;
@@ -43,8 +52,8 @@ figcaption{
 
 }
 body {
-    background-color: darkgreen;
-    border: darkorange 1px solid;
+    background-color: rgb(23, 38, 23);
+    border: rgb(23, 38, 23) 1px solid;
 }
 
 #header {
@@ -56,7 +65,8 @@ section {
 #line{
     width: 80%;
     margin-left: 25px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    height: 500px;
 }
 p{
     margin-left: 25px;}
@@ -122,6 +132,7 @@ table,tr,td
     border-collapse: collapse;
     border-color: slategray;
     width: 100%;
+    height: 95px;
 }
 img:not(h1){
     margin-left: 25px;
@@ -137,9 +148,336 @@ img:not(h1){
     color: white;
 }
 
-table, #ephemeride, #temp {
+table, #ephemeride, #temperature{
     background-color: blanchedalmond;
 }
 .normal {
     width: 20%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1020px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-top: 50px;
+    }
+    
+    section {
+        display: flex;
+        justify-content: space-around;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        margin-bottom: 80px;
+        margin-top: 20px;
+    }
+    h1 {
+        color: white;
+        font-size: 30px;
+        width:60%;
+        padding-left: 75px;
+        /* display: flex;
+        justify-content:center; */
+    }
+    #header_img {
+        /* width: 20%; */
+        padding-left: 150px;
+        padding-top: 20px;
+    }
+    figcaption{
+        margin-left: 25px;
+    }
+    .h2{ overflow: hidden;
+        position: absolute;
+        background-color: blanchedalmond;
+        margin: 0px auto;
+        margin-left: 10px;
+        margin-top: -10px;
+        box-shadow: inset 0px 0px 12px blanchedalmond;
+        width: 10%;
+    }
+    .h3{overflow: hidden;
+        position: absolute;
+        background-color: blanchedalmond;
+        margin: 0px auto;
+        margin-left: 10px;
+        margin-top: -15px;
+        box-shadow: blanchedalmond inset 0px 0px 12px;
+        width: 11%;
+    
+    }
+    body {
+        background-color: rgb(23, 38, 23);
+        border: rgb(23, 38, 23) 1px solid;
+    }
+    
+    #header {
+        width: 10%;
+    }
+    section {
+        width: 100%;
+    }
+    #line{
+        width: 80%;
+        margin-left: 15px;
+        /* margin-bottom: 20px; */
+        height: 500px;
+    }
+    p{
+        margin-left: 10px;}
+    
+    #temperature {
+        width: 20%;
+        margin-left: 75px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
+    
+    #minTemp{
+        color: black;
+        font-size: 25px;
+        background-color: rgb(89, 89, 209);
+        border: black 1px solid;
+        width : 100px;
+        height : 100px;
+        -moz-border-radius : 50px;
+        -webkit-border-radius : 50px;
+        border-radius : 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #maxTemp {
+        color: black;
+        font-size: 25px;
+        background-color: rgb(224, 61, 61);
+        border: black 1px solid;
+        width : 100px;
+        height : 100px;
+        -moz-border-radius : 50px;
+        -webkit-border-radius : 50px;
+        border-radius : 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #meanTemp{
+        color: black;
+        font-size: 25px;
+        background-color: darkturquoise;
+        border: black 1px solid;
+        width : 100px;
+        height : 100px;
+        -moz-border-radius : 50px;
+        -webkit-border-radius : 50px;
+        border-radius : 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #ephemeride
+    {  overflow: hidden;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    table,tr,td
+    {
+        border: black 1px solid;
+        border-collapse: collapse;
+        border-color: slategray;
+        width: 100%;
+        height: 95px;
+    }
+    img:not(h1){
+        margin-left: 15px;
+    }
+    
+    .td {
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer {
+        color: white;
+    }
+    
+    table, #ephemeride, #temperature{
+        background-color: blanchedalmond;
+    }
+    .normal {
+        width: 10%;
+    }
+    h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-top: 80px;
+    }
+    
+    section {
+        display: flex;
+        justify-content: space-around;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    h1 {
+        color: white;
+        font-size: 15px;
+        width:60%;
+        padding-left: 45px;
+        padding-top: 50px;
+        /* display: flex;
+        justify-content:center; */
+    }
+    #header_img {
+        /* width: 20%; */
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    figcaption{
+        margin-left: 15px;
+    }
+    .h2{ overflow: hidden;
+        position: absolute;
+        background-color: blanchedalmond;
+        margin: 0px auto;
+        margin-left: 10px;
+        margin-top: -10px;
+        box-shadow: inset 0px 0px 12px blanchedalmond;
+        width: 20%;
+    }
+    .h3{overflow: hidden;
+        position: absolute;
+        background-color: blanchedalmond;
+        margin: 0px auto;
+        margin-left: 10px;
+        margin-top: -10px;
+        box-shadow: blanchedalmond inset 0px 0px 12px;
+        width: 23%;
+    
+    }
+    body {
+        background-color: rgb(23, 38, 23);
+        border: rgb(23, 38, 23) 1px solid;
+    }
+    
+    #header {
+        width: 10%;
+    }
+    section {
+        width: 100%;
+    }
+    #line{
+        width: 60%;
+        margin-left: 5px;
+        /* margin-bottom: 20px; */
+        height: 300px;
+    }
+    p{
+        margin-left: 5px;}
+    
+    #temperature {
+        width: 40%;
+        margin-left: 25px;
+        margin-right: 10px;
+        height: 405px;
+    }
+    
+    #minTemp{
+        color: black;
+        font-size: 15px;
+        background-color: rgb(89, 89, 209);
+        border: black 1px solid;
+        width : 70px;
+        height : 70px;
+        -moz-border-radius : 30px;
+        -webkit-border-radius : 30px;
+        border-radius : 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #maxTemp {
+        color: black;
+        font-size: 15px;
+        background-color: rgb(224, 61, 61);
+        border: black 1px solid;
+        width : 70px;
+        height : 70px;
+        -moz-border-radius : 30px;
+        -webkit-border-radius : 30px;
+        border-radius : 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #meanTemp{
+        color: black;
+        font-size: 15px;
+        background-color: darkturquoise;
+        border: black 1px solid;
+        width : 70px;
+        height : 70px;
+        -moz-border-radius : 30px;
+        -webkit-border-radius : 30px;
+        border-radius : 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #ephemeride
+    {  overflow: hidden;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    table,tr,td
+    {
+        border: black 1px solid;
+        border-collapse: collapse;
+        border-color: slategray;
+        width: 100%;
+        height: 55px;
+    }
+    img:not(h1){
+        margin-left: 5px;
+    }
+    
+    .td {
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer {
+        color: white;
+    }
+    
+    table, #ephemeride, #temperature{
+        background-color: blanchedalmond;
+    }
+    .normal {
+        width: 10%;
+    }
+    h2 {
+        font-size: 15px;
+    }
+
 }
